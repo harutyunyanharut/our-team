@@ -16,8 +16,28 @@ $spaces: (
   7: 35px,
   8: 40px,
   9: 45px,
-  10: 50px
+  10: 50px,
+  xxl: 221px,
 ) !default;
 
-$grid-cols-count: 12;
-$grid-spacing: 10px;
+$text-font-sizes: (
+  base: $base-font-size,
+  md: $fs-md,
+  lg: $fs-lg,
+  xl: $fs-xl,
+) !default;
+
+
+$heading-font-sizes: (
+  h4: $h4,
+  h3: $h3,
+  h2: $h2,
+  h1: $h1
+) !default;
+
+$colors: (
+  primary: $color-primary,
+  highlight: $color-highlight,
+  text: $color-text,
+  warning: $color-warning,
+) !default;

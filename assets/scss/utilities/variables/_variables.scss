@@ -3,38 +3,44 @@ $fonts-folder: "../fonts";
 $images-folder: '../img/';
 
 //fonts
-$font-primary: "Open Sans", serif;
+$font-primary: "HelveticaNeueCyr", serif;
 $font-secondary: "Times New Roman", serif;
-$font-icons: "Icomoon Project Name";
+$font-icons: "icomoon";
 
 //color usage
-$color-primary: #f99f07;
-$color-secondary: #1e3143;
-$color-tertiary: #818ea7;
-$color-highlight: #39a4cd;
+$color-primary: #1900E1;
+$color-highlight: #37FF8D;
 $color-warning: #e44c23;
 
 //Descriptive Base Colors
-$color-text: #000;
+$color-text: #281743;
 
 //Text
-$base-font-size: 16px;
+$base-font-size: 18px;
+
+// Font-sizes
+$fs-md: 1em; //18px
+$fs-lg: 1.222em; //22px
+$fs-xl: 1.778em; //32px
+
+// Heading sizes
+$h4: 1.222em; //22px
+$h3: 1.778em; //32px
+$h2: 3.111em; //56px
+$h1: 3.556em; //64px
 
 //Border Radiuses
 $br-default: 4px;
-$br-md: 10px;
-$br-lg: 30px;
 $br-rounded: 50%;
 $br-none: 0;
 
 // Transitions
 $trns-duration: .3s;
-$trns-duration-lg: 1s;
 $trns-delay: 50ms;
 
 //container
-$cont-width: 1280px;
-$cont-padding: 30px;
+$cont-width: 1415px;
+$cont-padding: 52px;
 
 //Resolutions
 $screen-lg: 1280px;
@@ -42,3 +48,8 @@ $screen-md: 1024px;
 $screen-sm: 768px;
 $screen-xs: 480px;
 $screen-xxs: 360px;
+
+$screen-md-max: ($screen-lg - 1); //1279px
+$screen-sm-max: ($screen-md - 1); //1023px
+$screen-xs-max: ($screen-sm - 1); //767px
+$screen-xxs-max: ($screen-xs - 1); //479px

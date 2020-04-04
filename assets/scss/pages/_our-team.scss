@@ -1,0 +1,23 @@
+.bg-grid {
+  @include bg-img($image: "bg/grid.png", $repeat: no-repeat, $position: top center, $size: 100%);
+}
+
+.section-team {
+  padding-top: 119px;
+  padding-bottom: 119px;
+}
+
+.section-story {
+  padding-top: 79px;
+  padding-bottom: 79px;
+}
+
+.section-slider {
+  padding-top: 146px;
+  padding-bottom: 146px;
+}
+
+.section-instagram {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}

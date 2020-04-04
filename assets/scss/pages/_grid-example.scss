@@ -1,7 +1,0 @@
-.test-grid {
-  [class^="col"], &> [class*=" col"]  {
-    min-height: 200px;
-    border: 2px solid gray;
-    padding: 15px;
-  }
-}

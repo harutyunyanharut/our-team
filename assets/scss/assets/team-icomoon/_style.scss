@@ -15,44 +15,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-check {
-  &:before {
-    content: $icon-check;
-  }
-}
-.icon-facebook {
-  &:before {
-    content: $icon-facebook;
-  }
-}
-.icon-g-plus {
-  &:before {
-    content: $icon-g-plus;
-  }
-}
-.icon-instagram {
-  &:before {
-    content: $icon-instagram;
-  }
-}
 .icon-next {
   &:before {
     content: $icon-next;
   }
 }
-.icon-previous {
+.icon-back {
   &:before {
-    content: $icon-previous;
+    content: $icon-back;
   }
 }
-.icon-search {
-  &:before {
-    content: $icon-search;
-  }
-}
-.icon-twitter {
-  &:before {
-    content: $icon-twitter;
-  }
-}
-
