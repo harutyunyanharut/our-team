@@ -1,0 +1,24 @@
+.svg-for-line {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  @include position($top: 0, $left: 0);
+}
+
+.svg-line {
+  stroke-width: 2px;
+  stroke: $color-highlight;
+}
+
+.svg-point {
+  display: inline-block;
+  vertical-align: top;
+  width: 64px;
+  height: 64px;
+  background-color: $color-highlight;
+  border-radius: $br-rounded;
+
+  &.top-right {
+    @include position($top: 87px, $right: 210px);
+  }
+}

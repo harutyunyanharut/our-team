@@ -1,16 +1,30 @@
+@each $key, $val in $heading-font-sizes {
+    #{$key},.#{$key} {
+        font-size: #{$val};
+        font-weight: map-get($font-weights, bold);
+    }
+}
+
+.h1, h1, .h2, h2 {
+    color: $color-primary;
+    line-height: 1;
+    letter-spacing: -3.5px;
+}
+
 @each $key, $val in $text-font-sizes {
     .fs-#{$key} {
         font-size: #{$val};
     }
 }
 
-@each $key, $val in $heading-font-sizes {
-    #{$key},.#{$key} {
-        font-size: #{$val};
-        font-weight: 700;
+@each $key, $val in $font-weights {
+    .fw-#{$key} {
+        font-weight: #{$val};
     }
 }
 
-.h1, h1, .h2, h2 {
+.heading-regular {
+    font-size: $fs-lg;
     color: $color-primary;
+    font-weight: map-get($font-weights, regular);
 }

@@ -27,7 +27,6 @@ $text-font-sizes: (
   xl: $fs-xl,
 ) !default;
 
-
 $heading-font-sizes: (
   h4: $h4,
   h3: $h3,
@@ -41,3 +40,8 @@ $colors: (
   text: $color-text,
   warning: $color-warning,
 ) !default;
+
+$font-weights: (
+  regular: 400,
+  bold: 700
+);

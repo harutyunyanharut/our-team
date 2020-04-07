@@ -6,14 +6,90 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
-    <nav>
-
+    <nav class="nav-menu">
+        <span class="nav-menu-btn"><i class="icon-menu"></i></span>
     </nav>
     <main class="bg-grid">
         <!-- start section Our Team -->
         <section class="section-team">
+            <span id="one" class="svg-point top-right"></span>
             <div class="container">
-                <h1 class="h2">Our Team</h1>
+                <div class="team-area">
+                    <h1 class="h2 team-heading text-center">Our Team</h1>
+
+                    <ul class="member-info-area">
+                       <li id="member_1" class="member-info">
+                            <span class="img-rounded lg">
+                                <img src="assets/img/team/jesse.svg" alt="Jesse Cole" />
+                            </span>
+                       </li>
+                    </ul>
+                    <ul class="list-block first-list text-center">
+                        <li>
+                            <span class="block-link">
+                                <span class="img-size">
+                                    <span class="img-rounded">
+                                        <img src="assets/img/team/jesse.svg" alt="Jesse Cole" />
+                                    </span>
+                                </span>
+                                <strong class="heading-regular">Jesse Cole</strong>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="block-link">
+                                <span class="img-size">
+                                    <span class="img-rounded">
+                                        <img src="assets/img/team/stephen.svg" alt="Stephen Ippolito" />
+                                    </span>
+                                </span>
+                                <strong class="heading-regular">Stephen Ippolito</strong>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="block-link">
+                                <span class="img-size">
+                                    <span class="img-rounded">
+                                        <img src="assets/img/team/george.svg" alt="George Hornig" />
+                                    </span>
+                                </span>
+                                <strong class="heading-regular">George Hornig</strong>
+                            </span>
+                        </li>
+                    </ul>
+
+                    <ul class="list-block second-list text-center">
+                        <li>
+                            <span class="block-link">
+                                <span class="img-size">
+                                    <span class="img-rounded">
+                                        <img src="assets/img/team/serena.svg" alt="Serena Overhoff" />
+                                    </span>
+                                </span>
+                                <strong class="heading-regular">Serena Overhoff</strong>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="block-link">
+                                <span class="img-size">
+                                    <span class="img-rounded">
+                                        <img src="assets/img/team/zack.svg" alt="Zack Milkman" />
+                                    </span>
+                                </span>
+                                <strong class="heading-regular">Zack Milkman</strong>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="block-link">
+                                <span class="img-size">
+                                    <span class="img-rounded">
+                                        <img src="assets/img/team/douglas.svg" alt="Douglas Brundage" />
+                                    </span>
+                                </span>
+                                <strong class="heading-regular">Douglas Brundage</strong>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- end section Our Team -->
@@ -21,7 +97,7 @@
         <!-- start section The Story -->
         <section class="section-story">
             <div class="container">
-                <h2 class="h1">The Story</h2>
+                <h2 class="h1"><span id="two" class="svg-point"></span> The Story</h2>
             </div>
         </section>
         <!-- end section The Story -->
@@ -29,7 +105,7 @@
         <!-- start section Making Headlines -->
         <section class="section-slider">
             <div class="container">
-                <h2 class="h1">Making Headlines</h2>
+                <h2 class="h1">Making Headlines <span id="three" class="svg-point"></span></h2>
                 <i class="icon-back"></i>
                 <i class="icon-next"></i>
             </div>
@@ -39,10 +115,17 @@
         <!-- start section @instagram -->
         <section class="section-instagram pb-xxl">
             <div class="container">
-                <h2 class="h1">@instagram</h2>
+                <h2 class="h1"><span id="four" class="svg-point"></span> @instagram</h2>
             </div>
         </section>
         <!-- end section @instagram -->
+
+        <svg class="svg-for-line">
+            <line class="svg-line original"/>
+        </svg>
     </main>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,10 +1,27 @@
 .bg-grid {
-  @include bg-img($image: "bg/grid.png", $repeat: no-repeat, $position: top center, $size: 100%);
+  &:before {
+    content: '';
+    z-index: 0;
+    @include position($top: 0, $right: 0, $bottom: 0, $left: 0);
+    @include bg-img($image: "bg/grid.png", $repeat: no-repeat, $position: top center, $size: 100%);
+  }
 }
 
 .section-team {
   padding-top: 119px;
   padding-bottom: 119px;
+  position: relative;
+
+  .container {
+    z-index: 1;
+    position: relative;
+  }
+  &:before {
+    content: '';
+    z-index: -1;
+    background-color: $color-light;
+    @include position($top: 231px, $right: 0, $bottom: 281px, $left: 0);
+  }
 }
 
 .section-story {
@@ -20,4 +37,71 @@
 .section-instagram {
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.block-link {
+  cursor: pointer;
+
+  &:hover {
+    .heading-regular {
+      color: $color-highlight;
+    }
+    .img-rounded {
+      opacity: 0.9;
+    }
+  }
+  .img-rounded {
+    margin-bottom: 20px;
+    transition: $trns-duration ease;
+  }
+  .heading-regular {
+    transition: $trns-duration ease;
+  }
+}
+
+.img-rounded {
+  border-radius: $br-rounded;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  display: block;
+
+  img {
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+    @include position($top: 50%, $left: 50%);
+  }
+}
+
+.img-size {
+  margin-left: auto;
+  margin-right: auto;
+  width: 81.5%;
+  display: block;
+}
+
+.team-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  .team-heading {
+    order: 2;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .first-list {
+    order: 1;
+    width: 100%;
+  }
+  .second-list {
+    order: 3;
+    width: 100%;
+  }
+}
+
+.member-info-area {
+
 }
