@@ -1,0 +1,45 @@
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+
+@each $key,$val in $resolutions {
+  @media (min-width: $val) {
+    .justify-#{$key}-between {
+      justify-content: space-between;
+    }
+  }
+  @media (min-width: $val) {
+    .justify-#{$key}-left {
+      justify-content: left;
+    }
+  }
+}

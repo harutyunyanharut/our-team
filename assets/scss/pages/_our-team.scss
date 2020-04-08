@@ -70,6 +70,8 @@
   img {
     max-width: 100%;
     transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
     @include position($top: 50%, $left: 50%);
   }
 }
@@ -102,6 +104,24 @@
   }
 }
 
-.member-info-area {
+.info-line {
+  @include clear-after;
 
+  .info-left-side {
+    float: left;
+    width: 38.5%;
+    padding-right: 81px;
+  }
+  .info-left {
+    float: left;
+    width: 61.5%;
+    max-width: 448px;
+  }
+  .info-mt {
+    margin-top: 72px;
+  }
+}
+
+.member-info-list {
+  width: 100%;
 }

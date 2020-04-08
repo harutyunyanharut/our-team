@@ -1,0 +1,30 @@
+//displays
+.d-block {
+  display: block;
+}
+.d-none, .hidden {
+  display: none;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-flex {
+  display: flex;
+}
+
+@each $key,$val in $resolutions {
+  @media (min-width: $val) {
+    .d-#{$key}-block {
+      display: block;
+    }
+    .d-#{$key}-none {
+      display: none;
+    }
+    .d-#{$key}-inline-block {
+      display: inline-block;
+    }
+    .d-#{$key}-flex {
+      display: flex;
+    }
+  }
+}
