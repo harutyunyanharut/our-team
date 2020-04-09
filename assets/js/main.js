@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //svg points
     var config = {
-        target: $(".svg-point"),
+        target: $(".svg-coord"),
         line: $(".svg-line"),
         delay: 40 // enter zero for live resizing
     };

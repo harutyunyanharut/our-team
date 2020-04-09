@@ -1,7 +1,7 @@
 .bg-grid {
   &:before {
     content: '';
-    z-index: 0;
+    z-index: -1;
     @include position($top: 0, $right: 0, $bottom: 0, $left: 0);
     @include bg-img($image: "bg/grid.png", $repeat: no-repeat, $position: top center, $size: 100%);
   }
@@ -18,7 +18,7 @@
   }
   &:before {
     content: '';
-    z-index: -1;
+    z-index: -2;
     background-color: $color-light;
     @include position($top: 231px, $right: 0, $bottom: 281px, $left: 0);
   }
@@ -102,6 +102,25 @@
     order: 3;
     width: 100%;
   }
+  &.tab-selected {
+    .team-heading {
+      display: none;
+    }
+    .list-block {
+      justify-content: unset;
+      width: 50%;
+    }
+    .img-size {
+      width: 79.5%;
+    }
+  }
+  .tab-btn {
+    &.active {
+      .heading-regular {
+        color: $color-highlight;
+      }
+    }
+  }
 }
 
 .info-line {
@@ -109,12 +128,13 @@
 
   .info-left-side {
     float: left;
-    width: 38.5%;
+    width: 53%;
+    max-width: 545px;
     padding-right: 81px;
   }
   .info-left {
     float: left;
-    width: 61.5%;
+    width: 47%;
     max-width: 448px;
   }
   .info-mt {
@@ -124,23 +144,4 @@
 
 .member-info-list {
   width: 100%;
-}
-
-.tabs-section {
-  display: none;
-}
-
-.tabs-area {
-  &.tab-selected {
-    .tabs-section {
-      display: block;
-    }
-  }
-  .tab {
-    display: none;
-
-    &.active {
-      display: block;
-    }
-  }
 }

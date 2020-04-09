@@ -1,0 +1,18 @@
+.tabs-section {
+  display: none;
+}
+
+.tabs-area {
+  &.tab-selected {
+    .tabs-section {
+      display: block;
+    }
+  }
+  .tab {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
