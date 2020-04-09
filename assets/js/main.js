@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //svg points
     var config = {
         target: $(".svg-point"),
         line: $(".svg-line"),
@@ -45,4 +46,27 @@ $(document).ready(function(){
     };
 
     drawBetweenObjects.init();
+
+
+    //tab select
+    $('.tab-btn').on('click touch', function () {
+        var self = $(this),
+            tabsArea = self.closest('.tabs-area'),
+            dataTab = self.attr('data-tab');
+
+        tabsArea
+            .find('.tab-btn')
+            .removeClass('active');
+
+        self.addClass('active');
+
+        tabsArea
+            .addClass('tab-selected')
+            .find('.tab')
+            .removeClass('active');
+
+        tabsArea
+            .find(dataTab)
+            .addClass('active');
+    });
 });
