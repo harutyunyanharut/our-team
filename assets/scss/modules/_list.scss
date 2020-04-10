@@ -4,9 +4,11 @@
   flex-wrap: wrap;
 
   & > li {
-    width: 33%;
+    width: 33.33%;
     max-width: 285px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: map-get($spaces, 1);
+    padding-right: map-get($spaces, 1);
+    margin-top: map-get($spaces, 8);
+    margin-bottom: map-get($spaces, 8);
   }
 }

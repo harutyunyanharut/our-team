@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).on('load', function() {
     //svg points
     var config = {
         target: $(".svg-coord"),
@@ -47,7 +47,6 @@ $(document).ready(function(){
 
     drawBetweenObjects.init();
 
-
     //tab select
     $('.tab-btn').on('click touch', function () {
         var self = $(this),
@@ -68,5 +67,7 @@ $(document).ready(function(){
         tabsArea
             .find(dataTab)
             .addClass('active');
+
+        drawBetweenObjects.findLines( config.target );
     });
 });

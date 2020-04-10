@@ -1,0 +1,18 @@
+@media (max-width: $screen-sm-max) {
+    .heading-regular {
+        font-size: $fs-lg / $font-coefficient;
+    }
+    @each $key, $val in $heading-font-sizes {
+        #{$key},.#{$key} {
+            font-size: #{$val / $heading-coefficient};
+        }
+    }
+
+    //resized second time
+    .fs-lg {
+        font-size: map-get($text-font-sizes, lg) / $font-coefficient;
+    }
+    .fs-xl {
+        font-size: map-get($text-font-sizes, xl) / $heading-coefficient;
+    }
+}

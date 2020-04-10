@@ -1,0 +1,41 @@
+@media (max-width: $screen-sm-max) {
+  .section-team {
+    &:before {
+      content: none;
+      display: none;
+    }
+  }
+  .team-area {
+    .team-heading {
+      margin-top: 0;
+
+      &.h2 {
+        font-size: $h2 * $font-coefficient;
+      }
+    }
+    &.tab-selected {
+      .list-block {
+        width: 100%;
+      }
+      .img-size {
+        width: 89%;
+      }
+    }
+  }
+  .img-size {
+    width: 89%;
+  }
+  .info-line {
+    .info-left-side {
+      padding-right: map-get($spaces, 7);
+    }
+    .info-left {
+      & ~ .info-left {
+        width: 100%;
+      }
+    }
+    .info-mt {
+      margin-top: map-get($spaces, 5);
+    }
+  }
+}

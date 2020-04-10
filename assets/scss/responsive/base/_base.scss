@@ -1,0 +1,6 @@
+@media (max-width: $screen-sm-max) {
+  body {
+    font-size: $base-font-size / $font-coefficient;
+    letter-spacing: unset;
+  }
+}

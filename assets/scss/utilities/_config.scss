@@ -17,8 +17,10 @@ $spaces: (
   8: 24px,
   9: 27px,
   10: 30px,
-  lg: 51px,
-  xxl: px,
+  11: 33px,
+  12: 36px,
+  lg: 72px,
+  xxl: 221px,
 ) !default;
 
 $text-font-sizes: (
@@ -29,7 +31,6 @@ $text-font-sizes: (
 ) !default;
 
 $heading-font-sizes: (
-  h4: $h4,
   h3: $h3,
   h2: $h2,
   h1: $h1

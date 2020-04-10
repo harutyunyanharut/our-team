@@ -1,20 +1,21 @@
 .nav-menu {
   z-index: 9;
   width: $nav-width;
-  background-color: $color-primary;
   @include position($position: fixed, $top: 0, $left: 0, $bottom: 0);
 
   .nav-menu-btn {
-    font-size: 38px;
+    font-size: 30px;
     color: #fff;
     width: $nav-width;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 28px;
+    padding-bottom: 28px;
     display: block;
     cursor: pointer;
     background-color: $color-highlight;
     transition: $trns-duration ease;
     text-align: center;
+    position: relative;
+    z-index: 1;
 
     &:hover {
       background-color: darken($color-highlight, 20%);
@@ -25,5 +26,10 @@
   }
   & ~ main {
     padding-left: $nav-width;
+  }
+  .nav-links {
+    padding-top: 100px;
+    background-color: $color-primary;
+    @include position($top: 0, $left: 0, $right: 0, $bottom: 0);
   }
 }

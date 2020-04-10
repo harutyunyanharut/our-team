@@ -1,0 +1,22 @@
+@media (max-width: $screen-sm-max) {
+  .nav-menu {
+    width: auto;
+    position: absolute;
+
+    .nav-menu-btn {
+      width: 60px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .nav-links {
+      display: none;
+    }
+
+    & ~ main {
+      padding-left: 0;
+    }
+  }
+  .team-area {
+    display: block;
+  }
+}

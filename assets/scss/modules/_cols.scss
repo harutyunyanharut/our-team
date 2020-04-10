@@ -1,0 +1,32 @@
+.four-cols {
+  flex-wrap: wrap;
+
+  & > .col {
+    width: calc(50% - 12px);
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .four-cols {
+    & > .col {
+      width: calc(25% - 12px);
+    }
+  }
+}
+
+.two-md-cols {
+  & > .col {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .two-md-cols {
+    flex-wrap: wrap;
+
+    & > .col {
+      width: calc(50% - 12px);
+    }
+  }
+}

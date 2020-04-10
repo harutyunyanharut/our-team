@@ -1,0 +1,15 @@
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%link {
+  text-decoration: underline;
+  transition: $trns-duration ease;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-highlight;
+  }
+}

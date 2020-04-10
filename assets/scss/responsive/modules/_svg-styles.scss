@@ -5,3 +5,15 @@
     }
   }
 }
+
+@media (max-width: $screen-sm-max) {
+  .svg-point {
+    width: 34px;
+    height: 34px;
+
+    &.top-right {
+      right: 0;
+      top: 105px;
+    }
+  }
+}

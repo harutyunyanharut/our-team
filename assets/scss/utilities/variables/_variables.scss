@@ -16,8 +16,9 @@ $color-light: #F9F9F9;
 //Descriptive Base Colors
 $color-text: #281743;
 
-//Text
+//Base Font-sizes
 $base-font-size: 18px;
+$font-coefficient: 1.2;
 
 // Font-sizes
 $fs-md: 1em; //18px
@@ -25,10 +26,10 @@ $fs-lg: 1.222em; //22px
 $fs-xl: 1.778em; //32px
 
 // Heading sizes
-$h4: 1.222em; //22px
 $h3: 1.778em; //32px
 $h2: 3.111em; //56px
 $h1: 3.556em; //64px
+$heading-coefficient: 1.325;
 
 //Border Radiuses
 $br-default: 4px;

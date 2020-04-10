@@ -1,0 +1,27 @@
+.box-img {
+  padding: map-get($spaces, 4);
+  @extend %flex-center;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.box-content {
+  display: flex;
+
+  .box-img {
+    width: 33.7%;
+  }
+  .box-info {
+    width: 66.3%;
+    padding-left: map-get($spaces, 8);
+  }
+  .box-info-text {
+    max-width: 301px;
+  }
+}
+
+.gradient-primary {
+  background: linear-gradient(270deg, #213BD8 0%, #2D1A82 100%);
+}
