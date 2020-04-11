@@ -1,0 +1,71 @@
+.with-arrows {
+  position: relative;
+  padding-left: 66px;
+  padding-right: 66px;
+}
+
+.slick-arrow {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  transition: $trns-duration ease;
+  @include position($top: 50%);
+
+  &:hover {
+    border-color: $color-highlight;
+  }
+}
+
+.slick-next {
+  right: 0;
+  transform: rotate(-45deg) translate(25%,-50%);
+  border-bottom: 2px solid $color-primary;
+  border-right: 2px solid $color-primary;
+}
+
+.slick-prev {
+  left: 0;
+  transform: rotate(-45deg) translate(50%, -25%);
+  border-top: 2px solid $color-primary;
+  border-left: 2px solid $color-primary;
+}
+
+.slick-dotted {
+  position: relative;
+  margin-bottom: 70px;
+
+  .slick-dots {
+    display: flex;
+    transform: translateX(-50%);
+    @include position($bottom: -70px, $left: 50%);
+
+    &> li {
+      & + li {
+        margin-left: map-get($spaces, 7);
+      }
+      button {
+        height: 12px;
+        width: 12px;
+        padding: 0;
+        border-radius: $br-rounded;
+        border: 2px solid $color-primary;
+        background-color: transparent;
+        line-height: 0;
+        font-size: 0;
+        text-indent: 100%;
+        cursor: pointer;
+        transition: $trns-duration ease;
+      }
+      &.slick-active {
+        button {
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+.slick-slide {
+  padding-left: map-get($spaces, 6);
+  padding-right: map-get($spaces, 6);
+}

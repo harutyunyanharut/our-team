@@ -1,0 +1,8 @@
+@each $key-colors, $val-colors in $colors {
+  .color-#{$key-colors} {
+    color: #{$val-colors};
+  }
+  .bg-color-#{$key-colors} {
+    background-color: #{$val-colors};
+  }
+}

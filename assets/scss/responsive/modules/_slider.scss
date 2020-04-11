@@ -1,0 +1,25 @@
+@media (max-width: $screen-sm-max) {
+  .with-arrows {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+  .slick-dotted {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+
+    .slick-dots {
+      bottom: 12px;
+    }
+  }
+  .slick-arrow {
+    top: auto;
+    bottom: 0;
+    width: 17px;
+    height: 17px;
+  }
+  .slick-slide {
+    padding-left: map-get($spaces, 3);
+    padding-right: map-get($spaces, 3);
+  }
+}

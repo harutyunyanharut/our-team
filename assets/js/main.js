@@ -70,4 +70,26 @@ $(window).on('load', function() {
 
         drawBetweenObjects.findLines( config.target );
     });
+
+
+    //slider
+    $('.slick-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        centerPadding: '60px',
+        infinite: true,
+        arrows: true,
+        swipeToSlide:true,
+        nextArrow: '<span class="slick-next"></span>',
+        prevArrow: '<span class="slick-prev"></span>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
 });

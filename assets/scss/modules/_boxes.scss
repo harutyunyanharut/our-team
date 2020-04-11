@@ -7,6 +7,13 @@
   }
 }
 
+.box-logo {
+  @extend .box-img;
+  max-width: 171px;
+  min-height: 170px;
+  border: 1px solid $color-gray;
+}
+
 .box-content {
   display: flex;
 
