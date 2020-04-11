@@ -69,3 +69,9 @@
   padding-left: map-get($spaces, 6);
   padding-right: map-get($spaces, 6);
 }
+
+.slick-slider {
+  &:not(.slick-initialized) {
+    display: flex;
+  }
+}
