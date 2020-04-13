@@ -13,3 +13,8 @@
     color: $color-highlight;
   }
 }
+
+%animated {
+  animation-duration: $trns-duration;
+  animation-fill-mode: both;
+}

@@ -10,9 +10,14 @@
   }
   .tab {
     display: none;
+    opacity: 0;
+    @extend %animated;
+    animation-name: fadeOut;
 
     &.active {
+      opacity: 1;
       display: block;
+      animation-name: fadeIn;
     }
   }
 }
